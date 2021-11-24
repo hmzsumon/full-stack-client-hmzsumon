@@ -28,7 +28,7 @@ export const getProducts =
 		try {
 			dispatch({ type: ALL_PRODUCT_REQUEST });
 
-			let link = `/api/v1/products?page=${currentPage}`;
+			let link = `https://full-stack-server-hmzsumon.herokuapp.com/api/v1/products?page=${currentPage}`;
 
 			if (category) {
 				link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, forgotPassword } from '../../actions/userAction';
 import { useAlert } from 'react-alert';
 import ButtonLoader from '../layout/ButtonLoader';
+import MetaData from '../layout/MetaData';
 
 const ForgotPassword = () => {
 	const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const ForgotPassword = () => {
 
 	return (
 		<>
+			<MetaData title={'Reset Password'} />
 			<Navbar />
 
 			<div className='flex flex-col items-center justify-center h-screen px-4 py-10 bg-gray-100 sm:px-6 lg:px-8 '>

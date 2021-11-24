@@ -7,6 +7,7 @@ import { clearErrors, login } from '../../actions/userAction';
 import { useAlert } from 'react-alert';
 import Loader from '../layout//Loader/Loader';
 import Navbar from '../../components/Header/Navbar';
+import MetaData from '../layout/MetaData';
 
 const Login = ({ history, location }) => {
 	const dispatch = useDispatch();
@@ -46,6 +47,7 @@ const Login = ({ history, location }) => {
 				<Loader />
 			) : (
 				<>
+					<MetaData title={'Login'} />
 					<Navbar />
 					<div className='flex flex-col items-center justify-center h-screen px-4 bg-gray-100 sm:px-6 lg:px-8 '>
 						<div className='w-full max-w-md p-8 space-y-8 bg-white rounded shadow'>

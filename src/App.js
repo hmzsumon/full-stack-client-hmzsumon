@@ -23,6 +23,8 @@ import ForgotPassword from './components/User/ForgetPassword';
 import ResetPassword from './components/User/ResetPassword';
 import UpdatePassword from './components/User/UpdatePassword';
 import UpdateProfile from './components/User/UpdateProfile';
+import UsersList from './components/Admin/UserList';
+import UpdateUser from './components/Admin/UpdateUser';
 
 function App() {
 	useEffect(() => {
@@ -74,6 +76,18 @@ function App() {
 					path='/admin/update/:id'
 					isAdmin={true}
 					component={EditProduct}
+				/>
+				<ProtectedRoute
+					exact
+					path='/admin/users'
+					isAdmin={true}
+					component={UsersList}
+				/>
+				<ProtectedRoute
+					exact
+					path='/admin/user/:id'
+					isAdmin={true}
+					component={UpdateUser}
 				/>
 			</Switch>
 		</Router>

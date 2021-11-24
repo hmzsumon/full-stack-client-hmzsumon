@@ -25,15 +25,14 @@ const ProductForm = () => {
 	const [imagesPreview, setImagesPreview] = useState([]);
 
 	const categories = [
-		'Laptop',
+		'Foods',
+		'Cosmetics',
+		'Clothing',
 		'Footwear',
-		'Bottom',
-		'Tops',
-		'Attire',
+		'Laptop',
+		'Mobile',
 		'Camera',
 		'SmartPhones',
-		'Food',
-		'Cosmetics',
 	];
 
 	const createProductSubmitHandler = (e) => {

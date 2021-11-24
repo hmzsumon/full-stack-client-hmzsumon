@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import Loader from '../layout/Loader/Loader';
 import Navbar from '../../components/Header/Navbar';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+import MetaData from '../layout/MetaData';
 
 const Home = ({ match }) => {
 	const dispatch = useDispatch();
@@ -41,6 +42,7 @@ const Home = ({ match }) => {
 				<Loader />
 			) : (
 				<>
+					<MetaData title={'Home'} />
 					<Navbar />
 					<Search />
 					<div className='grid grid-cols-1 gap-8 px-10 py-10 sm:grid-cols-2 md:grid-cols-3 '>

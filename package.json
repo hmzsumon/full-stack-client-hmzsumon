@@ -1,6 +1,6 @@
 {
 	"name": "fresh-valley-client",
-	"proxy": "https://full-stack-server-hmzsumon.herokuapp.com",
+	"proxy": "http://localhost:5001",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -13,13 +13,14 @@
 		"@testing-library/react": "^11.1.0",
 		"@testing-library/user-event": "^12.1.10",
 		"axios": "^0.24.0",
-		"chart.js": "^3.6.0",
+		"chart.js": "^3.5.1",
 		"firebase": "^9.2.0",
 		"http-proxy-middleware": "^2.0.1",
 		"js-cookie": "^3.0.1",
 		"react": "^17.0.2",
 		"react-alert": "^7.0.3",
 		"react-alert-template-basic": "^1.0.2",
+		"react-chartjs-2": "^3.0.4",
 		"react-dom": "^17.0.2",
 		"react-helmet": "^6.1.0",
 		"react-js-pagination": "^3.0.3",
@@ -30,6 +31,7 @@
 		"redux-devtools-extension": "^2.13.9",
 		"redux-persist": "^6.0.0",
 		"redux-thunk": "^2.4.0",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
@@ -60,5 +62,11 @@
 		"autoprefixer": "^9.8.8",
 		"postcss": "^7.0.39",
 		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+	},
+	"workspaces": {
+		"nohoist": [
+			"@tailwindcss/forms",
+			"@tailwindcss/forms/**"
+		]
 	}
 }

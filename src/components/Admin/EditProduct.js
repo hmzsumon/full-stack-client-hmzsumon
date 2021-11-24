@@ -15,7 +15,6 @@ import { UPDATE_PRODUCT_RESET } from '../../constants/productConstants';
 const EditProduct = () => {
 	const match = useRouteMatch();
 	const history = useHistory();
-	console.log(match);
 
 	const dispatch = useDispatch();
 	const alert = useAlert();
@@ -37,11 +36,12 @@ const EditProduct = () => {
 	const [imagesPreview, setImagesPreview] = useState([]);
 
 	const categories = [
-		'Laptop',
+		'Foods',
+		'Cosmetics',
+		'Clothing',
 		'Footwear',
-		'Bottom',
-		'Tops',
-		'Attire',
+		'Laptop',
+		'Mobile',
 		'Camera',
 		'SmartPhones',
 	];

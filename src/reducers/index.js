@@ -12,9 +12,11 @@ import {
 	productReducer,
 } from './productReducer';
 import {
+	allUsersReducer,
 	forgotPasswordReducer,
 	loadUserReducer,
 	profileReducer,
+	userDetailsReducer,
 	userReducer,
 } from './userReducer';
 
@@ -33,8 +35,11 @@ const rootReducer = combineReducers({
 	profile: profileReducer,
 	forgotPassword: forgotPasswordReducer,
 	user: userReducer,
+
 	loadUser: loadUserReducer,
 	adminProducts: adminProductsReducer,
+	allUsers: allUsersReducer,
+	userDetails: userDetailsReducer,
 	cart: cartReducer,
 });
 
